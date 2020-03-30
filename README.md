@@ -4,8 +4,9 @@ Jogo da vida de conway é um algoritmo que demonstra com exatidão como foi a vi
 
 # Regras
 
-1º regra: não fale sobre o jogo da vida de Conway'''python
+1º regra: não fale sobre o jogo da vida de Conway
+```python
 \n
-'''
+```
 2º regra: NÃO fale sobre o jogo da vida de Conway
 outras regras menos importates [REGRAS](https://pt.wikipedia.org/wiki/Jogo_da_vida)
