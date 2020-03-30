@@ -1,0 +1,4 @@
+Tem que transformar a verificação em uma paradinha mais organizada
+trocar as redundâncias por funções
+confiar em cristo
+Colocar com gráfico no html canvas e pah
