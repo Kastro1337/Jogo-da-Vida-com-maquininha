@@ -93,3 +93,25 @@ for(y = 0; y<10;y++){
 }
 
 }
+
+// Graphics ↓
+
+document.body.innerHTML += "<div id='box'>";
+box = document.getElementById("box");
+
+function gerarBotao(){
+	
+	box.innerHTML = ''
+	for(j = 0; j < 10; j++){
+		for(i = 0; i < 10; i++){
+			if(lista[j][i] == 0){
+				box.innerHTML += "<button id = 'botao'></button> "
+			}
+			else{
+				box.innerHTML += "<button id = 'botao' style = 'background-color:red;'></button> "
+			}
+		}
+		box.innerHTML += "<br>"
+	}
+	
+}
