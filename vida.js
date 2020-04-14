@@ -95,8 +95,18 @@ for(y = 0; y<10;y++){
 	gerarBotao();
 }
 
+function trocaValor(x,y){
+	lista[y][x] == 0 ? lista[y][x] = 1 : lista[y][x] = 0;
+	gerarBotao();
+	console.log('asd')
+	
+}
 
-function trocaValor(X,Y){
+function abc(){
+	x = document.getElementById('marcarX').value
+	y = document.getElementById('marcarY').value
+	lista[y][x] == 0 ? lista[y][x] = 1 : lista[y][x] = 0;
+	gerarBotao();
 
 }
 
@@ -111,15 +121,19 @@ function gerarBotao(){
 	for(j = 0; j < 10; j++){
 		for(i = 0; i < 10; i++){
 			if(lista[j][i] == 0){
-				box.innerHTML += "<button valorX = "+i+" valorY = "+j+" onclick = 'trocaValor()'></button> "
+				box.innerHTML += "<button id = 'botao' valorX = "+i+" valorY = "+j+" onclick = 'trocaValor();'></button> "
 			}
 			else{
-				box.innerHTML += "<button valorX = "+i+" valorY = "+j+" style = 'background-color:red;' onclick = 'trocaValor()'></button> "
+				box.innerHTML += "<button id = 'botao' valorX = "+i+" valorY = "+j+" style = 'background-color:red;' onclick = 'trocaValor()'></button> "
 			}
 		}
 		box.innerHTML += "<br>"
 	}
 	
 }
+
+
+
+
 
 gerarBotao();
