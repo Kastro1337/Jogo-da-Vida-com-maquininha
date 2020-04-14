@@ -92,6 +92,12 @@ for(y = 0; y<10;y++){
 	}
 }
 
+	gerarBotao();
+}
+
+
+function trocaValor(X,Y){
+
 }
 
 // Graphics ↓
@@ -105,13 +111,15 @@ function gerarBotao(){
 	for(j = 0; j < 10; j++){
 		for(i = 0; i < 10; i++){
 			if(lista[j][i] == 0){
-				box.innerHTML += "<button id = 'botao'></button> "
+				box.innerHTML += "<button valorX = "+i+" valorY = "+j+" onclick = 'trocaValor()'></button> "
 			}
 			else{
-				box.innerHTML += "<button id = 'botao' style = 'background-color:red;'></button> "
+				box.innerHTML += "<button valorX = "+i+" valorY = "+j+" style = 'background-color:red;' onclick = 'trocaValor()'></button> "
 			}
 		}
 		box.innerHTML += "<br>"
 	}
 	
 }
+
+gerarBotao();
