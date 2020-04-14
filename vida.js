@@ -96,19 +96,26 @@ for(y = 0; y<10;y++){
 }
 
 function trocaValor(x,y){
+	/*
 	lista[y][x] == 0 ? lista[y][x] = 1 : lista[y][x] = 0;
 	gerarBotao();
-	console.log('asd')
+	console.log('asd')*/
 	
 }
 
-function abc(){
-	x = document.getElementById('marcarX').value
-	y = document.getElementById('marcarY').value
+function marcar(){
+	x = document.getElementById('marcarX').value;
+	y = document.getElementById('marcarY').value;
 	lista[y][x] == 0 ? lista[y][x] = 1 : lista[y][x] = 0;
 	gerarBotao();
 
 }
+/*
+function startstop(){
+	text = document.getElementById("start").innerText;
+	text == "start" ? text = "stop" : text = "start";
+	document.getElementById("start").innerText = text;
+}*/
 
 // Graphics ↓
 
@@ -131,8 +138,6 @@ function gerarBotao(){
 	}
 	
 }
-
-
 
 
 
