@@ -9,9 +9,6 @@ for(y = 0; y<10;y++){
 }
 //matriz 10x10
 
-lista[1][0] = 1
-lista[1][1] = 1
-lista[1][2] = 1
 
 
 //listaNova = lista; // Isso nao pode ocorrer
@@ -25,7 +22,7 @@ for(y = 0; y<10;y++){
 	}
 }
 
-function aperta(){
+function proximo(){
 for(y = 0; y<10;y++)
 	{
 	
@@ -105,16 +102,10 @@ function trocaValor(x,y){
 function marcar(){
 	x = document.getElementById('marcarX').value;
 	y = document.getElementById('marcarY').value;
-	lista[y][x] == 0 ? lista[y][x] = 1 : lista[y][x] = 0;
-	gerarBotao();
+	trocaValor(x,y);
 
 }
-/*
-function startstop(){
-	text = document.getElementById("start").innerText;
-	text == "start" ? text = "stop" : text = "start";
-	document.getElementById("start").innerText = text;
-}*/
+
 
 // Graphics ↓
 
